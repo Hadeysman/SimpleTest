@@ -3,17 +3,17 @@
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget xmlns     	= "http://www.w3.org/ns/widgets"
         xmlns:gap 	= "http://phonegap.com/ns/1.0"
-        id        	= "com.rickmitchell.simplepg"
+        id        	= "com.michaelbertoncini.splash"
 		versionCode = "1"
         version   	= "1.0.0">
 
-    <name>Simple App</name>
+    <name>Splash and Icon</name>
 
     <description>
-        A simple mobile app that tests features from jQueryMobile
+        Extends a simple mobile app with a splash screen and with an icon and with some additional jQuery page features
     </description>
 
-    <author href="http:www.ricksphp.com/mobile" email="mbertoncini@student.framingham.edu">
+    <author href="http:www.ricksphp.com/mobile" email="rmitchell@framinghame.edu">
         Michael Bertoncini
     </author>
 
@@ -86,7 +86,11 @@
     <icon src="res/icon/windows-phone/icon-48.png"  gap:platform="winphone" />
     <icon src="res/icon/windows-phone/icon-173.png" gap:platform="winphone"   gap:role="background" />
 
-    <!-- Define app splash screen for each platform. -->
+	<!-- Define ap defalut splash screen for each platform. -->
+    <gap:splash src="images/splash.png" /> 
+	 
+	<!-- Define app splash screen for each platform. -->
+	
     <gap:splash src="res/screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="res/screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="res/screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
